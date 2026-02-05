@@ -1,0 +1,63 @@
+[project]
+name = "lesson-06"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "mkdocs>=1.6.1",
+    "mkdocs-material>=9.7.1",
+    "mkdocstrings>=1.0.2",
+    "mkdocstrings-python>=2.0.1",
+    "pandas>=3.0.0",
+    "pre-commit>=4.5.1",
+    "pydantic>=2.12.5",
+    "pytest>=9.0.2",
+    "pytest-cov>=7.0.0",
+    "scikit-learn>=1.8.0",
+]
+
+
+
+[tool.mypy]
+python_version = "3.11"
+
+# Требует аннотации для всех функций
+disallow_untyped_defs = true
+
+# Предупреждает, если функция может вернуть Any
+warn_return_any = true
+
+# Игнорирует библиотеки без типов (например, старые или научные)
+ignore_missing_imports = true
+
+# warn_unused_ignores = false
+# отключает проверку неиспользованных игноров
+
+[[tool.mypy.overrides]]
+module = "pandas"
+ignore_missing_imports = true
+
+
+[[tool.mypy.overrides]]
+module = "pydantic"
+ignore_missing_imports = false
+
+
+
+# Секция для настройки pytest
+[tool.pytest.ini_options]
+
+# Пути для поиска тестов
+testpaths = ["tests"]
+
+# Паттерны имен файлов с тестами
+python_files = ["test_*.py", "*_test.py"]
+
+# Паттерны имен классов с тестами
+python_classes = ["Test*", "*Test"]
+
+# Паттерны имен функций с тестами
+python_functions = ["test_*"]
+
+pythonpath = ["."]

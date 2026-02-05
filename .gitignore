@@ -1,0 +1,32 @@
+.git/
+
+*.csv
+*.pkl
+
+# Логи
+*.log
+*.logs
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python
+__pycache__/
+.python-version
+*.py[cod]
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+
