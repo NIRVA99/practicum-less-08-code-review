@@ -1,11 +1,15 @@
-import os
-import pandas as pd
+"""
+Код Ревью: перенести скрипт scripts/main.py
+"""
+
+import os # излишний импорт
+import pandas as pd # излишний импорт
 from src.data import load_data, split_data
 from src.features import add_time_features
 from src.model import TaxiFareModel
-
+# добавить еще одину пустую строку
 # Глобальная переменная
-DATA_PATH = "data/main.csv"
+DATA_PATH = "data/main.csv" # ошибка: файл с данными uber.csv
 
 # Загрузка и обработка данных
 raw_data = load_data(DATA_PATH)
