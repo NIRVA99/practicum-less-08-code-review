@@ -16,6 +16,11 @@ dependencies = [
     "scikit-learn>=1.8.0",
 ]
 
+[dependency-groups]
+dev = [
+    "mypy>=1.19.1",
+    "ruff>=0.14.14",
+]
 
 
 [tool.mypy]
