@@ -12,7 +12,7 @@ raw_data = load_data(DATA_PATH)
 processed_data = add_time_features(raw_data)
 X_train, X_test, y_train, y_test = split_data(processed_data)
 
-# Обучение модели.
+# Обучение модели
 model = TaxiFareModel()
 model.fit(X_train, y_train)
 

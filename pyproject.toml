@@ -16,6 +16,8 @@ dependencies = [
     "scikit-learn>=1.8.0",
 ]
 
+
+
 [tool.mypy]
 python_version = "3.11"
 
@@ -39,6 +41,7 @@ ignore_missing_imports = true
 [[tool.mypy.overrides]]
 module = "pydantic"
 ignore_missing_imports = false
+
 
 
 # Секция для настройки pytest
