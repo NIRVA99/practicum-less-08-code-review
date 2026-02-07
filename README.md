@@ -2,4 +2,5 @@
 
 ## Для запуска введите
 
-Run main.py
+Run main.py.
+

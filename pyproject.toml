@@ -51,7 +51,7 @@ ignore_missing_imports = false
 testpaths = ["tests"]
 
 # Паттерны имен файлов с тестами
-python_files = ["test_*.py", "*_test.py"]
+python_files = ["Test_*.py", "test_*.py", "*_test.py"]
 
 # Паттерны имен классов с тестами
 python_classes = ["Test*", "*Test"]

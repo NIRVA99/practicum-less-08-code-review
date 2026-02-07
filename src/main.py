@@ -4,7 +4,7 @@ from src.data import load_data, split_data
 from src.features import add_time_features
 from src.model import TaxiFareModel
 
-# Глобальная переменная
+# Глобальная переменная.
 DATA_PATH = "data/main.csv"
 
 # Загрузка и обработка данных
